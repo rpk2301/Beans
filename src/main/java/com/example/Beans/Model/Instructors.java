@@ -4,12 +4,16 @@ import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class Instructors <InstructorMe extends Instructor> extends People{
+public class Instructors  extends People<Instructor>{
 
 
-    public Instructors(InstructorMe...stus)
+    public Instructors(Instructor...stus)
     {
         super(stus);
+    }
+    public Instructors()
+    {
+        super();
     }
 
 

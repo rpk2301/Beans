@@ -8,7 +8,7 @@ public  abstract class People<PersonType extends Person> implements Iterable<Per
 
 
 
-    List<PersonType> PersonList;
+    List<PersonType> PersonList=new ArrayList<>();
 
     public People(List<PersonType> persons)
     {

@@ -3,18 +3,22 @@ package com.example.Beans.Model;
 import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
-public class Students<StudentType extends Student> extends People
+public class Students extends People<Student>
 {
 
 
 
 
-    public Students(StudentType...stus)
+    public Students(Student...stus)
     {
         super(stus);
     }
-
+    public Students()
+    {
+        super();
+    }
 
     @Override
     public Iterator iterator() {
